@@ -1,36 +1,64 @@
 .mainContainer {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  justify-content: left;
 }
 
 .menubar {
   display: flex;
   flex-direction: column;
-  z-index: 200;
+  /* z-index: 200; */
   align-items: center;
-  width: 5%;
+  overflow: auto;
+  width: 80px;
+  height: 100%;
   padding: 0px;
   margin: 0px;
   background-color: tomato;
   border-right: 1px solid black;
 }
-/* .logo {
-  width: 50px;
-  height: 50px;
-
+.menubar .logo_box .link_logo {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  font-size: 1px;
+  line-height: 1px;
+}
+.list_navbar {
+  list-style-type: none;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.logo_box {
+  display: flex;
+  /* width: 80px; */
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
   background-color: white;
-} */
-
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  margin: 0px;
+}
+.link_logo {
+  display: inline-block;
+  /* width: 100%;
+  height: 100%; */
+  padding: 10px;
+  background-color: red;
+}
 .container {
   display: flex;
-  width: 95%;
+  width: calc(100% - 80px);
+  height: 100vh;
 }
 
-.map {
-  width: 400px;
+.map_wrap {
+  width: 30%;
   height: 100%;
-  background-color: aqua;
 }
 
 .exmap {
@@ -41,21 +69,23 @@
 .cctvzone {
   display: flex;
   flex-direction: column;
-  width: 1000px;
+  width: 70%;
   height: 100%;
   background-color: bisque;
 }
 
-.cctv {
+.cctv_list {
   display: flex;
   flex-wrap: wrap;
+  /* align-content: flex-start; */
+  overflow-x: auto;
+  /* flex-shrink: 1; */
   width: 100%;
   height: 85%;
   background-color: blue;
-  justify-content: left;
-  align-items: top;
+  /* justify-content: left; */
+  /* align-items: top; */
 }
-
 .smallContainer {
   display: flex;
   flex-direction: row;
