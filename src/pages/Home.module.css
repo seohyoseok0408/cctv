@@ -1,0 +1,63 @@
+.mainContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.menubar {
+  display: flex;
+  flex-direction: column;
+  z-index: 200;
+  align-items: center;
+  width: 5%;
+  padding: 0px;
+  margin: 0px;
+  background-color: tomato;
+  border-right: 1px solid black;
+}
+/* .logo {
+  width: 50px;
+  height: 50px;
+
+  background-color: white;
+} */
+
+.container {
+  display: flex;
+  width: 95%;
+}
+
+.map {
+  width: 400px;
+  height: 100%;
+  background-color: aqua;
+}
+
+.exmap {
+  height: 100%;
+  width: 100%;
+}
+
+.cctvzone {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: 100%;
+  background-color: bisque;
+}
+
+.cctv {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 85%;
+  background-color: blue;
+  justify-content: left;
+  align-items: top;
+}
+
+.smallContainer {
+  display: flex;
+  flex-direction: row;
+  height: 15%;
+}
